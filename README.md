@@ -1,16 +1,34 @@
-# LUX Request for Comments (RFC)
-Proposals to improve any of the LUX Reference Implementations (LRIs).  
-See the details on all of the LRIs [here](https://github.com/roaidev/docs/blob/9f558077e59a6ee52ee693c6f25a77fe1729977b/network/FOR%20CONTRIBUTORS/LUX%20Reference%20Implementations%20(LRI).md)
+# luxfi/rfc
 
+Cross-cutting RFCs for the Lux ecosystem. Protocol specs go in
+[`luxfi/lps`](https://github.com/luxfi/lps); this repo hosts proposals
+that span multiple LRIs (process, governance, org-wide standards).
 
-## Meta RFCs about RFCs
-- For most RFCs in general [RFC00](https://github.com/luxfi/rfc/blob/main/RFC00.md) is the first Meta RFC about how to submit an RFC. 
-- For RFCs about adding new assets, yield sources, chains, see this [RFC guide.](https://github.com/MorpheusAIs/MRC/blob/main/IMPLEMENTED/MRC15.md)
-- Similar to the function of the [ERC system](https://eips.ethereum.org/erc ) serves in Ethereum, the RFC process provides a common language to describe interactions between models, agents, compute, payments, funding and so forth.
-- There is a dedicated forum on Github Discussions for LUX RFCs [here](https://github.com/orgs/luxfi/discussions).
+## RFC vs LP
 
-## List of RFCs:
+- **LP** ([`luxfi/lps`](https://github.com/luxfi/lps)) — protocol-level
+  spec (consensus, crypto, chain topology, network upgrades). One
+  protocol, one LP. **Primary process.**
+- **RFC** (this repo) — cross-cutting / process / multi-LRI proposals.
+  Use only when a proposal does not fit a single LP.
 
-## RFC 00: LUX Request for Comment Standard
-- Status: **IMPLEMENTED**
-- Link: https://github.com/luxfi/rfc/blob/main/RFC00.md
+If unsure, file an LP.
+
+## Lifecycle
+
+`Draft → Review → Final / Withdrawn`
+
+A merge into `main` makes the discussion permanent; status lives in
+the RFC's own front-matter.
+
+## Submitting
+
+1. Copy [`RFC00.md`](./RFC00.md) as a template.
+2. PR titled `RFC <NN>: <one-line summary>`.
+3. Cite prior art. Keep scope narrow.
+
+## Index
+
+| RFC | Title | Status |
+|-----|-------|--------|
+| [00](./RFC00.md) | RFC Process | Final |
