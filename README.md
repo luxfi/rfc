@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="rfc" width="880"></p>
+
 # luxfi/rfc
 
 Cross-cutting RFCs for the Lux ecosystem. Protocol specs go in
